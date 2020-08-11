@@ -7,15 +7,17 @@ const lessDigitsBtn = document.getElementById("lessDigits")
 
 let digits = 4;
 
-// Create Pin
+// add event listeners
 pinBtn.addEventListener("click", () => {
     h2.textContent = createPin();
 })
 
+// increase number of digits
 moreDigitsBtn.addEventListener("click", () => {
     digitDisplay.textContent = ++digits;
 })
 
+// decrease number of digits
 lessDigitsBtn.addEventListener("click", () => {
     digits--
 
@@ -24,6 +26,7 @@ lessDigitsBtn.addEventListener("click", () => {
     digitDisplay.textContent = digits;
 })
 
+//create pin
 function createPin() {
     let newPin = "";
 
