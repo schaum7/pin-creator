@@ -21,7 +21,7 @@ moreDigitsBtn.addEventListener("click", () => {
 lessDigitsBtn.addEventListener("click", () => {
     digits--
 
-    digits < 0 ? digits = 0 : ""; 
+    if (digits<1) digits = 1; 
 
     digitDisplay.textContent = digits;
 })
